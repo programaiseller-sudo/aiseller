@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AIseller 2.0 – Automatyzacja sprzedaży AI | Boty, szkolenia, obsługa</title>
+  <meta name="description" content="AIseller 2.0 – platforma do automatyzacji sprzedaży. Bot AI, szkolenia, obsługa. Zarabiaj 24/7. Panel partnerów 50% prowizji. Bezpłatny hosting.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=AQT29PK2HxU05n_oA3y3SqoZ1W7LjJ2wOD0bOjaNGbseEWmRVM1owLIglPDKQjRmADUvZnybjZMHM2UW&currency=PLN"></script>
+  <style>
+    :root{--gold:#f59e0b;}.gold{color:var(--gold);}.bg-gold{background-color:var(--gold);}
+    section{display:none;}section.active{display:block;}
+    .fade-in{opacity:0;transform:translateY(20px);transition:all .6s ease;}
+    .fade-in.visible{opacity:1;transform:translateY(0);}
+    .chatbot{position:fixed;bottom:20px;right:20px;z-index:50;}
+  </style>
+</head>
+<body class="bg-black text-white">
+
+<!-- NAWIGACJA -->
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+  <h1 class="text-2xl font-bold gold">AIseller 2.0</h1>
+  <div class="space-x-4">
+    <button onclick="show('home')" class="hover:gold">Start</button>
+    <button onclick="show('about')" class="hover:gold">O nas</button>
+    <button onclick="show('shop')" class="hover:gold">Sklep</button>
+    <button onclick="show('partner')" class="hover:gold">Partnerzy</button>
+    <button onclick="show('faq')" class="hover:gold">FAQ</button>
+    <button onclick="show('contact')" class="hover:gold">Kontakt</button>
+    <button onclick="show('admin')" class="hover:gold">Admin</button>
+  </div>
+</nav>
+
+<!-- HOME / HERO -->
+<section id="home" class="container mx-auto px-6 py-20 text-center active">
+  <h2 class="text-5xl font-bold mb-4 fade-in">Automatyzacja sprzedaży – przyszłość Twojego biznesu</h2>
+  <p class="text-xl mb-8 fade-in">Zwiększ zyski, oszczędzaj czas i skaluj działania dzięki AI. Boty, szkolenia i obsługa w jednym miejscu.</p>
+  <button onclick="show('shop')" class="bg-gold text-black px-8 py-3 rounded text-lg font-semibold fade-in">Kup teraz bota za 699 zł</button>
+</section>
+
+<!-- O NAS -->
+<section id="about" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-6 fade-in">O nas</h2>
+  <p class="mb-4 fade-in">AIseller 2.0 to zespół ekspertów od marketingu i automatyzacji z 8-letnim doświadczeniem. Nasza platforma łączy zaawansowaną sztuczną inteligencję z prostotą obsługi – aby każdy mógł zwiększyć sprzedaż bez dodatkowych etatów.</p>
+  <h3 class="text-2xl font-bold mb-4 fade-in">Poznaj nasz zespół</h3>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=1" alt="Krystian" class="mx-auto rounded-full mb-2"><h4 class="gold">Krystian</h4><p>CEO & Założyciel</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=2" alt="Anna" class="mx-auto rounded-full mb-2"><h4 class="gold">Anna</h4><p>Head of AI</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=3" alt="Piotr" class="mx-auto rounded-full mb-2"><h4 class="gold">Piotr</h4><p>Tech Lead</p></div>
+  </div>
+</section>
+
+<!-- KORZYŚCI + 100 ZDAŃ -->
+<section id="benefits" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-6 fade-in">Korzyści dla Twojej firmy</h2>
+  <div class="grid md:grid-cols-2 gap-6 text-sm">
+    <div class="bg-gray-900 rounded p-4">
+      <h3 class="gold mb-2">1. Oszczędność czasu</h3>
+      <p>Automatyzacja pozwala na szybsze wykonywanie powtarzalnych zadań, takich jak wysyłanie e-maili, generowanie raportów czy zarządzanie kampaniami reklamowymi. Dzięki temu zespół może skupić się na strategicznych działaniach. Boty pracują 24/7, nie potrzebują przerw, urlopów ani snu. Oszczędność czasu przekłada się bezpośrednio na większą efektywność i szybszą reakcję na potrzeby klienta. Automatyzacja eliminuje rutynę, przez co pracownicy są bardziej zaangażowani i kreatywni. W ciągu 8 lat obserwujemy, że firmy po wdrożeniu naszych botów zyskują średnio 37% więcej czasu na działania pro-rozwojowe. To czas, który można przeznaczyć na innowacje, rozwój produktu czy budowanie relacji z klientem. Automatyzacja pozwala również na skalowanie działań bez zatrudniania dodatkowych osób – wystarczy jeden bot, aby obsłużyć tysiące klientów jednocześnie. Dzięki temu firma rośnie, ale koszty rosną wolniej. Oszczędność czasu to również mniejsze koszty operacyjne – nie trzeba płacić nadgodzin, ani zatrudniać dodatkowych specjalistów. Boty nie popełniają błędów ludzkich, przez co nie generują kosztów naprawy czy reklamacji. Automatyzacja pozwala również na szybsze testowanie nowych pomysłów – bot może wysłać 1000 wiadomości w 10 minut, człowiek potrzebuje na to całego dnia. Dzięki temu firma szybciej weryfikuje, co działa, a co nie. Oszczędność czasu to również lepsza jakość życia pracowników – nie muszą oni siedzieć po godzinach, aby wysłać maile czy odpowiadać na komentarze. Bot robi to za nich. Automatyzacja pozwala również na lepsze planowanie – dane są zbierane i analizowane w czasie rzeczywistym, przez co można szybciej reagować na zmiany rynkowe. Oszczędność czasu to również większa konkurencyjność – firma, która reaguje szybciej, zawsze wyprzedza konkurencję. Nasze boty są skalowalne – można je uruchomić w każdej chwili, bez dodatkowych kosztów infrastruktury. Oszczędność czasu to również mniejsze ryzyko błędów – bot działa zgodnie z algorytmem, nie zmęczeniem, nie emocjami. Dzięki temu komunikacja z klientem jest zawsze spójna i profesjonalna. Oszczędność czasu to również lepsza obsługa klienta – bot odpowiada natychmiast, nie trzeba czekać na konsultanta. Automatyzacja pozwala również na personalizację – bot może wysłać spersonalizowaną ofertę do tysiąca osób w 1 minutę. Oszczędność czasu to również większa kontrola – właściciel widzi, co dzieje się w czasie rzeczywistym, bez konieczności przeglądania setek wiadomości. Automatyzacja to inwestycja, która zwraca się średnio w 3 miesiące – potem tylko zyskuje. Oszczędność czasu to również większa elastyczność – bot może pracować w nocy, w weekendy, w święta. Dzięki temu firma nigdy nie traci okazji na sprzedaż. Oszczędność czasu to również lepsze zarządzanie zespołem – menadżerowie nie muszą pilnować, czy ktoś wysłał maila, bo bot to robi automatycznie. Automatyzacja pozwala również na integrację z innymi systemami – CRM, sklep internetowy, baza danych – wszystko działa razem, bez ręcznego przepisywania. Oszczędność czasu to również większa skalowalność – firma może obsługiwać 100 czy 10 000 klientów bez dodatkowych etatów. Automatyzacja to przyszłość, która już dziś daje realne korzyści.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OPINIE -->
+<section id="opinie" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-6 text-center">Opinie klientów</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- 20 opinii – placeholder zdjęcia + 5★ -->
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=11" alt="Kasia" class="mx-auto rounded-full mb-2"><h4 class="gold">Kasia</h4><p>★★★★★</p><p class="text-sm">"Bot pozyskał 300 klientów w 2 tygodnie – rewelacja!"</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=12" alt="Marcin" class="mx-auto rounded-full mb-2"><h4 class="gold">Marcin</h4><p>★★★★★</p><p class="text-sm">"Zamówienia wzrosły o 47%. Polecam każdemu!"</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=13" alt="Ania" class="mx-auto rounded-full mb-2"><h4 class="gold">Ania</h4><p>★★★★★</p><p class="text-sm">"Szkolenie dało mi konkretną wiedzę – teraz sama zarządzam botem."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=14" alt="Piotr" class="mx-auto rounded-full mb-2"><h4 class="gold">Piotr</h4><p>★★★★★</p><p class="text-sm">"Obsługa przez zespół AIseller to czysty komfort."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=15" alt="Ola" class="mx-auto rounded-full mb-2"><h4 class="gold">Ola</h4><p>★★★★★</p><p class="text-sm">"Zarabiam jako partner – system naprawdę działa!"</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=16" alt="Tomek" class="mx-auto rounded-full mb-2"><h4 class="gold">Tomek</h4><p>★★★★★</p><p class="text-sm">"Bot odpowiada na komentarze – ja piję kawę, a klienci przybywają."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=17" alt="Magda" class="mx-auto rounded-full mb-2"><h4 class="gold">Magda</h4><p>★★★★★</p><p class="text-sm">"Wycieczka zagraniczna za 2 miesiące – dzięki programowi partnerskiemu!"</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=18" alt="Radek" class="mx-auto rounded-full mb-2"><h4 class="gold">Radek</h4><p>★★★★★</p><p class="text-sm">"ROI 300% w 90 dni – lepsze wyniki niż z płatnych reklam."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=19" alt="Dominika" class="mx-auto rounded-full mb-2"><h4 class="gold">Dominika</h4><p>★★★★★</p><p class="text-sm">"Bot pisze lepiej niż ja – konwersacja naturalna, zero spamu."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=20" alt="Łukasz" class="mx-auto rounded-full mb-2"><h4 class="gold">Łukasz</h4><p>★★★★★</p><p class="text-sm">"Polecam każdemu – system działa jak zegarek."</p></div>
+  </div>
+</section>
+
+<!-- STRUKTURA PARTNERSKA -->
+<section id="partner" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-6 text-center">Sprzedaż Botów – Struktura Prowizji AIseller</h2>
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm bg-gray-900 rounded">
+      <thead class="gold"><tr><th class="p-2">Poziom</th><th>Nazwa</th><th>Prowizja</th><th>Bonus</th></tr></thead>
+      <tbody>
+        <tr><td class="p-2">0–5</td><td>🎓 START</td><td>10%</td><td>Szkolenie online</td></tr>
+        <tr><td class="p-2">6–15</td><td>🚀 AKTYWNY</td><td>15%</td><td>Premia 500 zł</td></tr>
+        <tr><td class="p-2">16–50</td><td>🥇 PRO</td><td>20%</td><td>Tablet Samsung + 1000 zł</td></tr>
+        <tr><td class="p-2">51–300</td><td>🏔️ EXPERT</td><td>25%</td><td>Hotel + 2000 zł</td></tr>
+        <tr><td class="p-2">301–1000</td><td>🌍 ELITE</td><td>30%</td><td>Wycieczka zagraniczna</td></tr>
+        <tr><td class="p-2">1000+</td><td>👑 AMBASADOR</td><td>35%</td><td>Kontrakt VIP</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3 class="text-2xl font-bold mt-6 mb-4 fade-in">Zostań partnerem</h3>
+  <form id="partnerForm" class="max-w-xl mx-auto">
+    <input type="text" name="name" placeholder="Imię i nazwisko" required class="w-full mb-3 px-3 py-2 rounded bg-gray-800">
+    <input type="email" name="email" placeholder="E-mail" required class="w-full mb-3 px-3 py-2 rounded bg-gray-800">
+    <input type="tel" name="phone" placeholder="Telefon" required class="w-full mb-3 px-3 py-2 rounded bg-gray-800">
+    <button type="submit" class="w-full bg-gold text-black py-2 rounded">Zarejestruj się</button>
+    <p id="pmsg" class="mt-4 text-sm"></p>
+  </form>
+</section>
+
+<!-- PANEL PARTNERA (po zalogowaniu) -->
+<section id="partnerPanel" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-4">Panel Partnera</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-gray-900 rounded p-4"><h3 class="gold mb-2">Sprzedaże</h3><p class="text-2xl font-bold" id="psales">0</p></div>
+    <div class="bg-gray-900 rounded p-4"><h3 class="gold mb-2">Prowizja</h3><p class="text-2xl font-bold" id="pcomm">0 zł</p></div>
+    <div class="bg-gray-900 rounded p-4"><h3 class="gold mb-2">Twój link</h3><input id="preflink" class="w-full px-2 py-1 rounded bg-gray-800 text-sm" readonly></div>
+  </div>
+  <div class="mt-6"><button onclick="exportCSV()" class="bg-gold text-black px-4 py-2 rounded">Eksport CSV</button></div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-4">Panel Admina</h2>
+  <form id="adminForm" class="max-w-md mx-auto">
+    <input type="email" id="aemail" value="admin@aiseller.pl" required class="w-full mb-3 px-3 py-2 rounded bg-gray-800">
+    <input type="password" id="apass" placeholder="Hasło" required class="w-full mb-3 px-3 py-2 rounded bg-gray-800">
+    <button type="submit" class="w-full bg-gold text-black py-2 rounded">Zaloguj</button>
+    <p id="amsg" class="mt-4 text-sm"></p>
+  </form>
+  <div id="astats" class="mt-6 hidden bg-gray-900 rounded p-4">
+    <h3 class="gold mb-2">Podsumowanie</h3>
+    <p>Całkowita sprzedaż: <strong id="atotal">0</strong> zł</p>
+    <p>Liczba partnerów: <strong id="apcount">0</strong></p>
+    <p>Prowizje do wypłaty: <strong id="acomm">0</strong> zł</p>
+    <button onclick="exportAdminCSV()" class="bg-gold text-black px-4 py-2 rounded mt-4">Eksport CSV</button>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-6 text-center">Najczęściej zadawane pytania</h2>
+  <div class="space-y-4">
+    <div class="bg-gray-900 rounded p-4"><strong class="gold">Czy bot działa 24/7?</strong><p class="mt-2">Tak, bot jest aktywny non-stop i odpowiada na pytania klientów.</p></div>
+    <div class="bg-gray-900 rounded p-4"><strong class="gold">Czy mogę anulować subskrypcję?</strong><p class="mt-2">Tak, w każdej chwili z poziomu PayPal.</p></div>
+    <div class="bg-gray-900 rounded p-4"><strong class="gold">Ile zarabia partner?</strong><p class="mt-2">Od 10% do 35% – w zależności od poziomu (tabela powyżej).</p></div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="contact" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-6 text-center">Kontakt</h2>
+  <div class="max-w-xl mx-auto">
+    <p class="mb-4">Telefon: <strong>889 220 990</strong></p>
+    <p class="mb-4">E-mail: <strong>aiseller1221@gmail.com</strong></p>
+    <form id="contactForm" class="space-y-4">
+      <input type="text" name="name" placeholder="Imię" required class="w-full px-3 py-2 rounded bg-gray-800">
+      <input type="email" name="email" placeholder="E-mail" required class="w-full px-3 py-2 rounded bg-gray-800">
+      <textarea name="message" placeholder="Wiadomość" required class="w-full px-3 py-2 rounded bg-gray-800 h-32"></textarea>
+      <button type="submit" class="w-full bg-gold text-black py-2 rounded">Wyślij</button>
+    </form>
+    <p id="cmsg" class="mt-4 text-sm"></p>
+  </div>
+</section>
+
+<!-- PODZIĘKOWANIE -->
+<section id="dziekujemy" class="container mx-auto px-6 py-12 text-center">
+  <h2 class="text-4xl gold font-bold mb-4">Dziękujemy za zakup!</h2>
+  <p class="text-lg">Bot zostanie dostarczony na Twój e-mail w ciągu 24 godzin.</p>
+  <button onclick="show('home')" class="mt-6 bg-gold text-black px-6 py-3 rounded">Wróć na stronę główną</button>
+</section>
+
+<footer class="text-center py-6 text-gray-500">© 2025 AIseller 2.0 | Tel: 889 220 990 | Email: aiseller1221@gmail.com</footer>
+
+<!-- CHżdemu, kto chce skalować biznes bez zatrudniania."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=21" alt="Klaudia" class="mx-auto rounded-full mb-2"><h4 class="gold">Klaudia</h4><p>★★★★★</p><p class="text-sm">"Szkolenie + bot = zestaw idealny dla początkującego przedsiębiorcy."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=22" alt="Marek" class="mx-auto rounded-full mb-2"><h4 class="gold">Marek</h4><p>★★★★★</p><p class="text-sm">"Obsługa klienta na najwyższym poziomie – bot odpowiada natychmiast."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=23" alt="Sylwia" class="mx-auto rounded-full mb-2"><h4 class="gold">Sylwia</h4><p>★★★★★</p><p class="text-sm">"Dzięki botowi mam więcej czasu dla rodziny – a firma się rozwija."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=24" alt="Paweł" class="mx-auto rounded-full mb-2"><h4 class="gold">Paweł</h4><p>★★★★★</p><p class="text-sm">"Leadów mam więcej niż potrafię obsłużyć – to dobry problem!"</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=25" alt="Basia" class="mx-auto rounded-full mb-2"><h4 class="gold">Basia</h4><p>★★★★★</p><p class="text-sm">"System partnerski to dodatkowy pasywny dochód – polecam!"</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=26" alt="Grzegorz" class="mx-auto rounded-full mb-2"><h4 class="gold">Grzegorz</h4><p>★★★★★</p><p class="text-sm">"Bot potrafi negocjować – klient myśli, że pisze z człowiekiem."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=27" alt="Monika" class="mx-auto rounded-full mb-2"><h4 class="gold">Monika</h4><p>★★★★★</p><p class="text-sm">"W 3 miesiące zwróciła się inwestycja – teraz tylko zysk."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=28" alt="Janusz" class="mx-auto rounded-full mb-2"><h4 class="gold">Janusz</h4><p>★★★★★</p><p class="text-sm">"Nie wyobrażam sobie już pracy bez bota – to mój najlepszy pracownik."</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=29" alt="Ewa" class="mx-auto rounded-full mb-2"><h4 class="gold">Ewa</h4><p>★★★★★</p><p class="text-sm">"Tablet i premia – już je mam, teraz cel: wycieczka!"</p></div>
+    <div class="bg-gray-900 rounded p-4 text-center"><img src="https://i.pravatar.cc/150?u=30" alt="Adam" class="mx-auto rounded-full mb-2"><h4 class="gold">Adam</h4><p>★★★★★</p><p class="text-sm">"Polecam każdemu, kto chce skalować biznes bez zatrudniania."</p></div>
+  </div>
+</section>
+
+<!-- POZNAJ ZESPÓŁ -->
+<section id="team" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-6 text-center">Poznaj nasz zespół</h2>
+  <div class="grid md:grid-cols-3 gap-6 text-center">
+    <div class="bg-gray-900 rounded p-6"><img src="https://i.pravatar.cc/150?u=31" alt="Krystian" class="mx-auto rounded-full mb-4"><h4 class="gold">Krystian</h4><p>CEO & Founder</p><p class="text-sm mt-2">8 lat doświadczenia w automatyzacji sprzedaży, twórca AIseller Bot.</p></div>
+    <div class="bg-gray-900 rounded p-6"><img src="https://i.pravatar.cc/150?u=32" alt="Anna" class="mx-auto rounded-full mb-4"><h4 class="gold">Anna</h4><p>Head of AI</p><p class="text-sm mt-2">Odpowiada za rozwój sztucznej inteligencji w botach.</p></div>
+    <div class="bg-gray-900 rounded p-6"><img src="https://i.pravatar.cc/150?u=33" alt="Marek" class="mx-auto rounded-full mb-4"><h4 class="gold">Marek</h4><p>Head of Sales</p><p class="text-sm mt-2">Zajmuje się relacjami z klientami i rozwojem sieci partnerskiej.</p></div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="contact" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-6">Kontakt</h2>
+  <p>📞 Telefon: <strong>889 220 990</strong></p>
+  <p>✉️ E-mail: <strong>aiseller1221@gmail.com</strong></p>
+  <p>📍 Adres: ul. Przykładowa 1, 00-001 Warszawa</p>
+</section>
+
+<!-- PANEL PARTNERA -->
+<section id="partner" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-4">Panel Partnera</h2>
+  <p class="mb-4">Zarejestruj się i zarabiaj 50% od każdego polecenia.</p>
+  <input id="pemail" type="email" placeholder="E-mail" class="w-full md:w-1/2 mb-3 px-3 py-2 rounded bg-gray-800"><br>
+  <input id="pname" type="text" placeholder="Imię i nazwisko" class="w-full md:w-1/2 mb-3 px-3 py-2 rounded bg-gray-800"><br>
+  <button id="pregBtn" class="bg-gold text-black px-6 py-2 rounded">Załóż konto</button>
+  <p id="pmsg" class="mt-4 text-sm"></p>
+  <div id="pstats" class="mt-6 hidden bg-gray-900 rounded p-4">
+    <h3 class="gold mb-2">Twoje statystyki</h3>
+    <p>Sprzedaże: <strong id="psales">0</strong></p>
+    <p>Prowizja: <strong id="pcomm">0</strong> zł</p>
+    <p>Twój link: <br><input id="preflink" class="w-full md:w-3/4 px-2 py-1 rounded bg-gray-800 text-sm" readonly></p>
+  </div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-4">Panel Admina</h2>
+  <p>Logowanie tylko dla admin@aiseller.pl</p>
+  <input id="aemail" type="email" value="admin@aiseller.pl" class="w-full md:w-1/2 mb-3 px-3 py-2 rounded bg-gray-800"><br>
+  <input id="apass" type="password" placeholder="Hasło" class="w-full md:w-1/2 mb-3 px-3 py-2 rounded bg-gray-800"><br>
+  <button id="aloginBtn" class="bg-gold text-black px-6 py-2 rounded">Zaloguj</button>
+  <p id="amsg" class="mt-4 text-sm"></p>
+  <div id="astats" class="mt-6 hidden bg-gray-900 rounded p-4">
+    <h3 class="gold mb-2">Podsumowanie</h3>
+    <p>Całkowita sprzedaż: <strong id="atotal">0</strong> zł</p>
+    <p>Liczba partnerów: <strong id="apcount">0</strong></p>
+    <p>Prowizje do wypłaty: <strong id="acomm">0</strong> zł</p>
+  </div>
+</section>
+
+<!-- PODZIĘKOWANIE -->
+<section id="dziekujemy" class="container mx-auto px-6 py-12 text-center">
+  <h2 class="text-4xl gold font-bold mb-4">Dziękujemy za zakup!</h2>
+  <p class="text-lg">Bot zostanie dostarczony na Twój e-mail w ciągu 24 godzin.</p>
+  <button onclick="show('shop')" class="mt-6 bg-gold text-black px-6 py-3 rounded">Wróć do sklepu</button>
+</section>
+
+<footer class="text-center py-6 text-gray-500">© 2025 AIseller 2.0 | Tel: 889 220 990</footer>
+
+<script>
+  function show(id){
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+
+  const refCode = new URLSearchParams(location.search).get('ref') || localStorage.getItem('ref');
+  if (refCode) localStorage.setItem('ref', refCode);
+
+  /* ---------- PayPal ---------- */
+  function renderPayPal(selector, price, product, subscription = false) {
+    paypal.Buttons({
+      createOrder(data, actions) {
+        const custom = { product, partnerRef: refCode };
+        if (subscription) {
+          return actions.subscription.create({
+            plan_id: 'P-XXXXXXXXXXXXXXXX', // ← wklej Plan ID gdy utworzysz
+            custom_id: JSON.stringify(custom)
+          });
+        } else {
+          return actions.order.create({
+            purchase_units: [{ amount: { value: price, currency_code: 'PLN' }, custom_id: JSON.stringify(custom) }]
+          });
+        }
+      },
+      onApprove() { show('dziekujemy'); }
+    }).render(selector);
+  }
+  renderPayPal('#paypal-bot', 699, 'Bot Aiseller');
+  renderPayPal('#paypal-course', 500, 'Szkolenie marketingowe');
+  renderPayPal('#paypal-service', 3500, 'Obsługa bota przez zespół', true);
+
+  /* ---------- Partner ---------- */
+  document.getElementById('pregBtn').onclick = async () => {
+    const email = document.getElementById('pemail').value;
+    const name  = document.getElementById('pname').value;
+    if (!email || !name) return alert('Wypełnij wszystkie pola');
+    // symulacja – w wersji pełnej podłącz Google Apps Script
+    document.getElementById('pstats').classList.remove('hidden');
+    document.getElementById('preflink').value = `${location.origin}${location.pathname}?ref=PRZYKLAD`;
+    document.getElementById('pmsg').textContent = 'Konto założone! Hasło zostało wysłane na e-mail (w wersji pełnej).';
+  };
+
+  /* ---------- Admin ---------- */
+  document.getElementById('aloginBtn').onclick = () => {
+    const email = document.getElementById('aemail').value;
+    const pass  = document.getElementById('apass').value;
+    if (email !== 'admin@aiseller.pl') return alert('Tylko admin@aiseller.pl');
+    // symulacja – w wersji pełnej podłącz Firebase
+    document.getElementById('astats').classList.remove('hidden');
+    document.getElementById('atotal').textContent = '6990';
+    document.getElementById('apcount').textContent = '12';
+    document.getElementById('acomm').textContent = '3495';
+    document.getElementById('amsg').textContent = 'Zalogowano (w wersji pełnej podłącz Firebase).';
+  };
+</script>
+</body>
+</html>
